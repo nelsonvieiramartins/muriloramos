@@ -41,7 +41,7 @@ export default function Galeria() {
               <div className="section-label" style={{ marginBottom: 24 }}>V. — Galeria</div>
             </div>
             <h2 className="h-display" style={{ fontSize: 'clamp(48px, 6.5vw, 110px)', margin: 0 }}>
-              Atrás <span className="em">das cortinas.</span>
+            Conheça minha <span className="em">Trajetória.</span>
             </h2>
           </div>
           <a className="btn" data-cursor="link" href="#">Press kit ↗</a>

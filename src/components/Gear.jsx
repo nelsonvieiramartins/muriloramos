@@ -8,7 +8,7 @@ export default function Gear() {
           <div className="section-label">VI. — Setup</div>
         </div>
         <h2 className="h-display" style={{ fontSize: 'clamp(48px, 6vw, 100px)', margin: 0 }}>
-          As <span className="em">ferramentas</span> do ofício.
+          <span className="em">My Gear.</span>
         </h2>
       </div>
 

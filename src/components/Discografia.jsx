@@ -45,7 +45,7 @@ export default function Discografia() {
             <div className="section-label" style={{ marginBottom: 24 }}>II. — Discografia</div>
           </div>
           <h2 className="h-display" style={{ fontSize: 'clamp(48px, 6vw, 110px)', margin: 0 }}>
-            O que se <span className="em">grava no escuro.</span>
+            Ouça sem <span className="em">moderação.</span>
           </h2>
         </div>
       </div>

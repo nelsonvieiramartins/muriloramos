@@ -9,10 +9,10 @@ export default function Facets() {
           <div className="section-label">Capítulo zero</div>
         </div>
         <h2 className="h-display" style={{ fontSize: 'clamp(56px, 8vw, 132px)', margin: 0 }}>
-          <Words text="Três ofícios," />
+          <Words text="Três trajetórias," />
           <br />
           <span className="em" style={{ fontStyle: 'italic' }}>
-            <Words text="uma só escuta." delay={120} />
+            <Words text="um só profissional." delay={120} />
           </span>
         </h2>
       </div>

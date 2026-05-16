@@ -5,10 +5,10 @@ export default function Agenda() {
     <section id="agenda" style={{ padding: '160px 56px', borderTop: '1px solid var(--hair)' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 60, alignItems: 'flex-end', marginBottom: 60 }}>
         <div data-reveal style={{ '--rd': '0ms' }}>
-          <div className="section-label">Agenda.</div>
+          <div className="section-label">Programe-se</div>
         </div>
         <h2 className="h-display" style={{ fontSize: 'clamp(56px, 8vw, 140px)', margin: 0 }}>
-          <span className="em">Agenda.</span>
+          <span className="em">Programe-se.</span>
         </h2>
       </div>
 

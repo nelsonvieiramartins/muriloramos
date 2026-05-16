@@ -63,7 +63,7 @@ export default function Imprensa() {
     <section id="press" style={{ padding: '160px 56px', borderTop: '1px solid var(--hair)' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 60, alignItems: 'flex-end', marginBottom: 60 }}>
         <div data-reveal style={{ '--rd': '0ms' }}>
-          <div className="section-label">IX. — Imprensa</div>
+          <div className="section-label">Depoimentos</div>
         </div>
         <h2 className="h-display" style={{ fontSize: 'clamp(48px, 6vw, 96px)', margin: 0 }}>
           Já <span className="em">disseram.</span>

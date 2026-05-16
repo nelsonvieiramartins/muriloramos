@@ -13,7 +13,7 @@ export default function Videos() {
             <div className="section-label" style={{ marginBottom: 24 }}>IV. — Vídeos & clipes</div>
           </div>
           <h2 className="h-display" style={{ fontSize: 'clamp(48px, 7vw, 120px)', margin: 0 }}>
-            Ao vivo e em <span className="em">estúdio.</span>
+            Videoclipes, Sessions e <span className="em">Performances.</span>
           </h2>
         </div>
         <a className="btn" data-cursor="link" href="#">Canal completo ↗</a>
