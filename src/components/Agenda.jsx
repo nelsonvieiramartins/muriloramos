@@ -5,10 +5,10 @@ export default function Agenda() {
     <section id="agenda" style={{ padding: '160px 56px', borderTop: '1px solid var(--hair)' }}>
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 2fr', gap: 60, alignItems: 'flex-end', marginBottom: 60 }}>
         <div data-reveal style={{ '--rd': '0ms' }}>
-          <div className="section-label">III. — Em turnê</div>
+          <div className="section-label">Agenda.</div>
         </div>
         <h2 className="h-display" style={{ fontSize: 'clamp(56px, 8vw, 140px)', margin: 0 }}>
-          Próximas <span className="em">noites.</span>
+          <span className="em">Agenda.</span>
         </h2>
       </div>
 
@@ -29,7 +29,6 @@ export default function Agenda() {
       </div>
 
       <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 40, fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--cream3)', letterSpacing: '.18em', textTransform: 'uppercase' }}>
-        <span>06 datas confirmadas</span>
         <a href="#" data-cursor="link">Todas as datas ↗</a>
       </div>
     </section>

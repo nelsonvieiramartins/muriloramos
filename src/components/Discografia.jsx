@@ -48,9 +48,6 @@ export default function Discografia() {
             O que se <span className="em">grava no escuro.</span>
           </h2>
         </div>
-        <div data-reveal style={{ '--rd': '300ms', maxWidth: 340, fontFamily: 'var(--body)', fontSize: 14, lineHeight: 1.7, color: 'var(--cream2)' }}>
-          Quatro registros desde 2018. Cada um é uma noite diferente — a mesma sala, a mesma fumaça, outra hora.
-        </div>
       </div>
 
       {/* Album cards — clicáveis para selecionar o player */}
@@ -119,9 +116,6 @@ export default function Discografia() {
                     <div style={{ fontFamily: 'var(--mono)', fontSize: 11, color: 'var(--amber)', letterSpacing: '.15em', flexShrink: 0, marginLeft: 8 }}>
                       {a.year}
                     </div>
-                  </div>
-                  <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 8, fontFamily: 'var(--mono)', fontSize: 9, letterSpacing: '.15em', color: 'var(--cream3)', textTransform: 'uppercase' }}>
-                    <span>{a.kind}</span><span>{a.tag}</span>
                   </div>
                 </div>
               </button>

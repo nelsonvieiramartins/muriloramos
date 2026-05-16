@@ -9,7 +9,7 @@ export default function Loja() {
             <div className="section-label" style={{ marginBottom: 24 }}>VIII. — Loja</div>
           </div>
           <h2 className="h-display" style={{ fontSize: 'clamp(48px, 6.5vw, 110px)', margin: 0 }}>
-            Objetos <span className="em">da fumaça.</span>
+            <span className="em">Produtos personalizados.</span>
           </h2>
         </div>
         <a className="btn" data-cursor="link" href="#">Ver tudo ↗</a>

@@ -3,7 +3,6 @@ import { MusicProvider } from './MusicContext';
 import Cursor from './components/Cursor';
 import Nav from './components/Nav';
 import Hero from './components/Hero';
-import MarqueeBar from './components/MarqueeBar';
 import Facets from './components/Facets';
 import Bio from './components/Bio';
 import Discografia from './components/Discografia';
@@ -28,7 +27,6 @@ export default function App() {
       <Cursor />
       <Nav />
       <Hero />
-      <MarqueeBar />
       <Facets />
       <Bio />
       <Discografia />

@@ -55,12 +55,12 @@ export default function Hero() {
 
           <div className="hero-fade d3" style={{ marginTop: 42, display: 'grid', gridTemplateColumns: '1.4fr 1fr', gap: 60, maxWidth: 980 }}>
             <p style={{ fontFamily: 'var(--serif)', fontSize: 26, fontStyle: 'italic', lineHeight: 1.35, color: 'var(--cream)', margin: 0, fontWeight: 300 }}>
-              Baixista, professor, tanatopraxista — três ofícios, uma mesma escuta. O que se faz com as mãos quando o silêncio chega.
+              Músico, produtor, professor, tanatopraxista - Várias trajetórias, um só profissional.
             </p>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 16, alignSelf: 'end' }}>
               <a className="btn solid" data-cursor="play" data-cursor-label="ouvir agora" href="#musica">
                 <span className="eq"><i/><i/><i/><i/><i/></span>
-                Ouvir Cinzas que Falam
+                Discografia
               </a>
               <a className="btn" data-cursor="link" href="#agenda">Próximos shows ↗</a>
             </div>
@@ -68,10 +68,6 @@ export default function Hero() {
         </div>
 
         <div className="hero-fade d4" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end' }}>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 12, fontFamily: 'var(--mono)', fontSize: 10, letterSpacing: '.3em', color: 'var(--cream3)', textTransform: 'uppercase' }}>
-            <span style={{ width: 18, height: 1, background: 'var(--cream3)', display: 'inline-block' }} />
-            ROL · DESCER · ROL · DESCER
-          </div>
           <div style={{ fontFamily: 'var(--mono)', fontSize: 10, letterSpacing: '.3em', color: 'var(--cream3)', textTransform: 'uppercase' }}>
             01 / 12
           </div>

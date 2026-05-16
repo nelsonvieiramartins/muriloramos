@@ -28,7 +28,7 @@ export const VIDEOS = [
 ];
 
 export const GEAR = [
-  { cat: 'Baixo',   items: ['Yamaha TRBX 605 6-string', 'Fender Jazz Bass · CIJ', 'Cort A6 Plus FMMH'] },
+  { cat: 'Baixo',   items: ['Ibanez BTB747-NTL 7-string', 'BTB7 Neck-through · 35" Scale', 'Bartolini BH2 · 3-band EQ'] },
   { cat: 'Guitarra',items: ['ESP LTD MH-1000', 'Schecter C-7 Multiscale', 'Telecaster Squier 50s'] },
   { cat: 'Pedais',  items: ['Darkglass B7K Ultra', 'Strymon Iridium', 'Boss DD-200', 'EHX Bass Big Muff'] },
   { cat: 'Amps',    items: ['Aguilar AG 700', 'Mesa/Boogie Subway D-800', 'Marshall JCM 800 (estúdio)'] },

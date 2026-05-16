@@ -3,11 +3,6 @@ import Words from './Words';
 
 const portrait = '/assets/IVI_8460.jpg';
 
-const stats = [
-  { n: '16',   l: 'Anos em cena'    },
-  { n: '04',   l: 'Álbuns autorais' },
-  { n: '120+', l: 'Shows · 2024'    },
-];
 
 export default function Bio() {
   const sectionRef = useRef(null);
@@ -86,23 +81,10 @@ export default function Bio() {
 
               <div data-reveal style={{ '--rd': '200ms' }}>
                 <p style={{ fontFamily: 'var(--serif)', fontSize: 20, lineHeight: 1.4, color: 'var(--cream)', fontWeight: 300, margin: '0 0 18px', maxWidth: 560 }}>
-                  Murilo Ramos é baixista, guitarrista, professor de Ciências e Biologia, e tanatopraxista profissional. As três práticas convivem pelo mesmo motivo: lidar com o que está por baixo da superfície.
-                </p>
-              </div>
-              <div data-reveal style={{ '--rd': '300ms' }}>
-                <p style={{ fontFamily: 'var(--body)', fontSize: 15, lineHeight: 1.65, color: 'var(--cream2)', margin: '0 0 18px', maxWidth: 520 }}>
-                  Em 16 anos de estrada, gravou 4 álbuns autorais, dividiu palco com nomes do rock e do metal nacional, e construiu uma pedagogia musical baseada em escuta, leitura e ofício. Em paralelo, leciona biologia para o ensino médio e atua como tanatopraxista — o ofício do silêncio, que ensina a respeitar o tempo do outro.
+                  Murilo Ramos é músico, produtor musical, professor, especialista em Anatomia Humana e Métodos e Técnicas de Ensino, com formação complementar em Anatomia (Miami, EUA) e mestrando em Tecnologias Emergentes na Educação. Com mais de 25 anos de carreira, foi eleito 7º melhor baixista do Brasil (Roadie Crew), primeiro goiano no Hell and Heaven Open Air e integrou a equipe técnica do videoclipe Tears of the Dragon (Reimagined), de Bruce Dickinson. Trabalhou com Roy Z, Addasi Addasi e Steve Baughman, além de tocar com Timo Tolkki, Marcelo Moreira, Edu Falaschi, Fábio Laguna, Eduardo Martinez, Marcelo Barbosa, Edu Ardanuy, Marcello Pompeu, Ricardo Confessori, Alírio Netto e Júnior Groovador. Com Heaven's Guardian, participou de projetos sinfônicos pioneiros na América Latina. Atua também em Biotecnologia, projetos educacionais, observação microscópica e Tanatopraxia, consolidando carreira multidisciplinar com alcance nacional e internacional.
                 </p>
               </div>
 
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, 1fr)', gap: 20, marginTop: 32, maxWidth: 520 }}>
-                {stats.map((s, i) => (
-                  <div key={s.l} className="stat" data-reveal style={{ '--rd': `${i * 140}ms` }}>
-                    <div className="n">{s.n}</div>
-                    <div className="l">{s.l}</div>
-                  </div>
-                ))}
-              </div>
             </div>
 
             <div data-reveal="mask">
