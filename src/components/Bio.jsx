@@ -18,75 +18,19 @@ export default function Bio() {
     const video   = videoRef.current;
     if (!section || !video) return;
 
-    let triggered  = false;
-    let anchorSkip = false;
-
-    const stopEvent = (e) => e.preventDefault();
-    const stopKey   = (e) => {
-      if ([' ', 'ArrowDown', 'ArrowUp', 'PageDown', 'PageUp'].includes(e.key))
-        e.preventDefault();
-    };
-
-    const lockScroll = () => {
-      document.documentElement.style.overflow = 'hidden'; // locks html — scrollbar-gutter:stable keeps the space
-      window.addEventListener('wheel',     stopEvent, { passive: false });
-      window.addEventListener('touchmove', stopEvent, { passive: false });
-      window.addEventListener('keydown',   stopKey,   { passive: false });
-    };
-
-    const unlockScroll = () => {
-      document.documentElement.style.overflow = '';
-      window.removeEventListener('wheel',     stopEvent);
-      window.removeEventListener('touchmove', stopEvent);
-      window.removeEventListener('keydown',   stopKey);
-    };
-
-    // Anchor navigation: skip lock, jump video to end
-    const onHashChange = () => {
-      anchorSkip = true;
-      triggered  = true;
-      unlockScroll();
-      const setEnd = () => { video.currentTime = video.duration; };
-      video.readyState >= 1 ? setEnd() : video.addEventListener('loadedmetadata', setEnd, { once: true });
-      setTimeout(() => { anchorSkip = false; }, 600);
-    };
+    let triggered = false;
 
     const onScroll = () => {
-      const sectionTop = section.offsetTop;
-
-      if (triggered && window.scrollY <= 0) {
-        triggered  = false;
-        anchorSkip = false;
-        unlockScroll();
-        video.pause();
-        video.currentTime = 0;
-        return;
-      }
-
-      if (triggered || anchorSkip) return;
-
-      if (window.scrollY >= sectionTop) {
+      if (triggered) return;
+      if (window.scrollY >= section.offsetTop) {
         triggered = true;
-        document.documentElement.scrollTop = sectionTop;
-        document.body.scrollTop = sectionTop;
-        lockScroll();
         video.playbackRate = 1.6;
         video.play().catch(() => {});
       }
     };
 
-    const onEnded = () => unlockScroll();
-
-    video.addEventListener('ended', onEnded);
-    window.addEventListener('scroll',     onScroll,     { passive: true });
-    window.addEventListener('hashchange', onHashChange);
-
-    return () => {
-      window.removeEventListener('scroll',     onScroll);
-      window.removeEventListener('hashchange', onHashChange);
-      video.removeEventListener('ended', onEnded);
-      unlockScroll();
-    };
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
   return (
