@@ -49,7 +49,7 @@ export default function Contato() {
             <div className="section-label" style={{ marginBottom: 32 }}>X. — Contato & booking</div>
           </div>
           <h2 className="h-display" style={{ fontSize: 'clamp(56px, 8vw, 160px)', margin: 0, lineHeight: .92 }}>
-            <span className="em">Shows, Eventos e</span>
+            <span className="em">Shows, Eventos e Contratações.</span>
           </h2>
 
           <div data-reveal style={{ '--rd': '400ms', marginTop: 48, display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 32, maxWidth: 620 }}>
