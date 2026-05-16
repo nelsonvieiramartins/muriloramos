@@ -5,10 +5,10 @@ export const FACETS = [
 ];
 
 export const ALBUMS = [
-  { id: '01', title: 'Cinzas que Falam', year: '2024', kind: 'LP · 9 faixas',  tag: 'instrumental',     spotifyId: '6lKEFeoPK7WYUoKghrGxCU' },
-  { id: '05', title: 'Novo Lançamento',  year: '2025', kind: 'Single',          tag: 'heavy',             spotifyId: '5hIJ6CBcDkiil5r2o8BJ4L' },
-  { id: '06', title: 'Signs',            year: '2016', kind: 'LP · 10 faixas',  tag: 'heavy metal',       spotifyId: '4o9A36uH9VlLP9PHEmnA5M' },
-  { id: '07', title: 'Bloody Room',      year: '2004', kind: 'EP · 5 faixas',   tag: 'death metal',       spotifyId: '645AU5L8sA5zrwOyQLIRTu' },
+  { id: '07', title: 'Bloody Room',      year: '2004', kind: 'EP · 5 faixas',   tag: 'death metal',   spotifyId: '645AU5L8sA5zrwOyQLIRTu' },
+  { id: '06', title: 'Signs',            year: '2016', kind: 'LP · 10 faixas',  tag: 'heavy metal',   spotifyId: '4o9A36uH9VlLP9PHEmnA5M' },
+  { id: '01', title: 'Cinzas que Falam', year: '2024', kind: 'LP · 9 faixas',   tag: 'instrumental',  spotifyId: '6lKEFeoPK7WYUoKghrGxCU' },
+  { id: '05', title: 'Novo Lançamento',  year: '2025', kind: 'Single',           tag: 'heavy',         spotifyId: '5hIJ6CBcDkiil5r2o8BJ4L' },
 ];
 
 export const SHOWS = [
